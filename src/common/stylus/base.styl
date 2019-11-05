@@ -1,3 +1,12 @@
 html,body
   height : 100%
   overflow: hidden
+
+.clear-fix
+  display: inline-block
+  &:after
+    content: '.'
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden
