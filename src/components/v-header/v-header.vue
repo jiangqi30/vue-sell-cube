@@ -1,12 +1,12 @@
 <template>
     <div class="header" @click="showDetail">
-        <!--头部内容-->
+        <!-- 头部内容 -->
         <div class="content-wrapper">
-            <!--头像-->
+            <!-- 头像 -->
             <div class="avatar">
                 <img class="avatar-img" :src="seller.avatar">
             </div>
-            <!--文本内容-->
+            <!-- 文本内容 -->
             <div class="content">
                 <div class="title">
                     <span class="brand"></span>
@@ -18,19 +18,19 @@
                     <span class="support-description">{{seller.supports[0].description}}</span>
                 </div>
             </div>
-            <!--活动个数-->
+            <!-- 活动个数 -->
             <div class="support-count" v-if="seller.supports">
                 <span class="count">{{seller.supports.length}}个</span>
                 <i class="icon-keyboard_arrow_right"></i>
             </div>
         </div>
-        <!--公告-->
+        <!-- 公告 -->
         <div class="bulletin-wrapper">
             <span class="bulletin-title"></span>
             <div class="bulletin-text">{{seller.bulletin}}</div>
             <i class="icon-keyboard_arrow_right"></i>
         </div>
-        <!--背景图-->
+        <!-- 背景图 -->
         <div class="background">
             <img class="background-img" :src="seller.avatar">
         </div>
